@@ -1,0 +1,27 @@
+//CONFIG
+@import "font";
+@import "variable";
+
+//RESET
+@import "normalize";
+@import "root";
+
+//CORE
+@import "heading";
+@import "layout";
+
+//PAGES
+@import "movie-page";
+@import "school-page";
+@import "admission-page";
+@import "gallery-page";
+@import "events-page";
+@import "social-page";
+@import "contact-page";
+@import "footer-page";
+
+//COMPONENTS
+@import "menu-bar";
+@import "image";
+@import "button";
+@import "barber-shop-pace.css";

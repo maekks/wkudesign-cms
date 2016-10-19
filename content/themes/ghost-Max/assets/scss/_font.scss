@@ -1,0 +1,72 @@
+/*-----------------------------------------------------------------------------
+
+FONTS
+
+-----------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'myoswaldlight';
+    src:
+        local('Oswald-Light'), local('Oswald Light'),
+        url('../fonts/Oswald/oswald-light-webfont.woff2') format('woff2'),
+        url('../fonts/Oswald/oswald-light-webfont.woff') format('woff'),
+        url('../fonts/Oswald/Oswald-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'myoswaldregular';
+    src:
+        local('Oswald-Regular'), local('Oswald Regular'),
+        url('../fonts/Oswald/oswald-regular-webfont.woff2') format('woff2'),
+        url('../fonts/Oswald/oswald-regular-webfont.woff') format('woff'),
+        url('../fonts/Oswald/Oswald-Regular.ttf') format('truetype');;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mysanfranciscodisplayultralight';
+    src:
+        local('SanFranciscoDisplay-Ultralight'), local('San Francisco Display UltraLight'), local('SanFranciscoDisplayUltraLight'),
+        url('../fonts/SanFrancisco/sanfranciscodisplay-ultralight-webfont.woff2') format('woff2'),
+        url('../fonts/SanFrancisco/sanfranciscodisplay-ultralight-webfont.woff') format('woff'),
+        url('../fonts/SanFrancisco/SanFranciscoDisplay-UltraLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'mysanfranciscodisplaylight';
+    src:
+        local('SanFranciscoDisplay-Light'), local('San Francisco Display Light'), local('SanFranciscoDisplayLight'),
+        url('../fonts/SanFrancisco/sanfranciscodisplay-light-webfont.woff2') format('woff2'),
+        url('../fonts/SanFrancisco/sanfranciscodisplay-light-webfont.woff') format('woff'),
+        url('../fonts/SanFrancisco/SanFranciscoDisplay-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mysanfranciscodisplayregular';
+    src:
+        local('SanFranciscoDisplay-Regular'), local('San Francisco Display Regular'), local('SanFranciscoDisplayRegular'),
+        url('../fonts/SanFrancisco/sanfranciscodisplay-regular-webfont.woff2') format('woff2'),
+        url('../fonts/SanFrancisco/sanfranciscodisplay-regular-webfont.woff') format('woff'),
+        url('../fonts/SanFrancisco/SanFranciscoDisplay-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mysanfranciscodisplaymedium';
+    src:
+        local('SanFranciscoDisplay-Medium'), local('San Francisco Display Medium'), local('SanFranciscoDisplayMedium'),
+        url('../fonts/SanFrancisco/sanfranciscodisplay-medium-webfont.woff2') format('woff2'),
+        url('../fonts/SanFrancisco/sanfranciscodisplay-medium-webfont.woff') format('woff'),
+        url('../fonts/SanFrancisco/SanFranciscoDisplay-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

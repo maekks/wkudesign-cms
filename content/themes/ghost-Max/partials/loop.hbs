@@ -1,11 +1,19 @@
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
-<section class="feature 6u 12u$(small) {{post_class}}">
-    <a href="{{url}}"><img class="image fit" src="{{image}}" alt="" /></a>
-    <h3 class="title"><a href="{{url}}">{{{title}}}</a></h3>
-    <p><p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p></p>
-</section>
+<a href="{{url}}" class="{{post_class}}">
+    <div class="event-item">
+        <div class="event-img" style="background-image: url({{image}})"></div>
+        <div class="event-intro">
+            <p>
+                {{title}}
+                {{excerpt characters="20"}}
+                <br>
+                <span class="event-date lightfont">{{date published_at format="MMMM DD, YYYY"}}</span>
+            </p>
+        </div>
+    </div>
+</a>
 {{/foreach}}
 
 {{! Previous/next page links - displayed on every page }}
-{{> "pagination"}}
+{{pagination}}

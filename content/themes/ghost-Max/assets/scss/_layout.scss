@@ -1,0 +1,22 @@
+/*-----------------------------------------------------------------------------
+
+LAYOUT
+
+-----------------------------------------------------------------------------*/
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-out;
+}
+
+.clearfix:after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
+}

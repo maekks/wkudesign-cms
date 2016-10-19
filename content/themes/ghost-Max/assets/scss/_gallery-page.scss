@@ -1,0 +1,64 @@
+.gallery-page{
+    position: relative;
+    width: 100%;
+    height: $page-height;
+    background: #fff;
+    overflow: scroll;
+}
+
+.gallery-items{
+    width: auto;
+    height: auto;
+    margin: 6% auto;
+    text-align: center;
+}
+
+.row{
+    display: inline-block;
+    height: auto;
+    width: auto;
+}
+
+.gallery-item{
+    position: relative;
+    display: inline-block;
+    height: 226px;
+    width: 234px;
+    overflow: hidden;
+    background-color: #f1c40f;
+    margin: 1.357% 21px;
+    img{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.gallery-title{
+    background-color: #fff;
+    overflow: visible;
+    h1{
+        display: block;
+        position: absolute;
+        top: 80px;
+        left: -80px;
+        -webkit-transform: rotate(-90deg);
+        font-family: myoswaldregular, $font-stack;
+        font-size: 3.929rem;
+        font-weight: 500;
+        margin: 0;
+    }
+    p{
+        display: block;
+        float: right;
+        text-align: left;
+        font-family: mysanfranciscodisplaylight, $font-stack;
+        font-weight: 100;
+        font-size: 1.143rem;
+        width: 155px;
+        span{
+            font-family: mysanfranciscodisplaymedium, $font-stack;
+            font-weight: 400;
+        }
+    }
+}
