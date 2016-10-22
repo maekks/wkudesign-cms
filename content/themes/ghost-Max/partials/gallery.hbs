@@ -1,0 +1,11 @@
+{{#get "posts" filter="tags:gallery" limit="7"}}
+{{#foreach posts}}
+<a href="#">
+    <div class="gallery-item">
+        <img src="{{image}}" alt="Drawing Art Girl" />
+        <h3>Willam Johns</h3>
+        <p>young girl concentrates on her drawing.<br>Class of 2015</p>
+    </div>
+</a>
+{{/foreach}}
+{{/get}}

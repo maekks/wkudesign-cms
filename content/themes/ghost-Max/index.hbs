@@ -29,29 +29,20 @@
                 <div class="logo"></div>
                 <h2>Program</h2>
                 <p class="program-text">
-                    The Michael Graves College is predicated on taking design and architecture to a wider public audience.
-                    It is composed of two schools, the Robert Busch School of Design and the School of Public Architecture.
-                    <br>
-                    <br>
-                    The Robert Busch School of Design within the Michael Graves College at Kean University offers students
-                     programs of intense professional study created to prepare graduates with both knowledge and skills, and
-                     with the potential to achieve the highest levels of career growth. The BFA and BID are the recognized
-                      professional degrees in the studio-based programs of Advertising Design, Graphic Design, Industrial Design,
-                      and Interior Design.
-                      <br>
-                      <br>
-                      The programs include extensive lecture, studio, and technology experiences,
-                      and presentations and reviews by external professional designers. In addition, students are given opportunities
-                      to pursue practical experience in the field through internships and part-time employment, to participate in
-                      events sponsored by trade organizations, and to meet design professionals during seminars and other special events,
-                      such as the world-class Thinking Creatively Conference.
+                    {{#get "posts" filter="slug:program-introduction" limit="1"}}
+                    {{#foreach posts}}
+                        {{content}}
+                    {{/foreach}}
+                    {{/get}}
                 </p>
                 <div class="divider" id="admission-page"></div>
                 <h2>Admission</h2>
                 <p class="admission-text">
-                    Whether applying through the CommonApp or Kean University application, a portfolio of original, creative work is
-                    required for entry into the Robert Busch School of Design. Once the application is submitted, instructions for
-                    uploading the portfolio are sent through email notification.
+                    {{#get "posts" filter="slug:admission-policy" limit="1"}}
+                    {{#foreach posts}}
+                        {{content}}
+                    {{/foreach}}
+                    {{/get}}
                 </p>
 
             </div>
@@ -60,7 +51,7 @@
     <div class="events-page" id="events-page">
         <h1>UPCOMING EVENTS</h1>
         <div class="events-box">
-            {{> "loop"}}
+            {{> "event"}}
         </div>
     </div>
     <div class="gallery-page" id="gallery-page">
@@ -77,47 +68,11 @@
                         <span>Pablo Picasso</span>
                     </p>
                 </div>
-                <div class="gallery-item">
-                    <img src="assets/imgs/gallery-page/pic2.png" alt="Drawing Art Girl" />
-                    <h3>Willam Johns</h3>
-                    <p>young girl concentrates on her drawing.<br>Class of 2015</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/imgs/gallery-page/pic3.png" alt="Drawing Art Girl" />
-                    <h3>Willam Johns</h3>
-                    <p>young girl concentrates on her drawing.<br>Class of 2015</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/imgs/gallery-page/pic4.png" alt="Drawing Art Girl" />
-                    <h3>Willam Johns</h3>
-                    <p>young girl concentrates on her drawing.<br>Class of 2015</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="gallery-item">
-                    <img src="assets/imgs/gallery-page/pic1.png" alt="Drawing Art Girl" />
-                    <h3>Willam Johns</h3>
-                    <p>young girl concentrates on her drawing.<br>Class of 2015</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/imgs/gallery-page/pic5.png" alt="Drawing Art Girl" />
-                    <h3>Willam Johns</h3>
-                    <p>young girl concentrates on her drawing.<br>Class of 2015</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/imgs/gallery-page/pic6.png" alt="Drawing Art Girl" />
-                    <h3>Willam Johns</h3>
-                    <p>young girl concentrates on her drawing.<br>Class of 2015</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/imgs/gallery-page/pic7.png" alt="Drawing Art Girl" />
-                    <h3>Willam Johns</h3>
-                    <p>young girl concentrates on her drawing.<br>Class of 2015</p>
-                </div>
+                {{> "gallery"}}
             </div>
         </div>
     </div>
     <div class="contact-page" id="contact-page">
         <div id="allmap"></div>
     </div>
-</div>
+    {{> "footer"}}

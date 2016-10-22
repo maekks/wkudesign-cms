@@ -23,35 +23,7 @@
     height: 43.43%;
     width: 56%;
     margin: 0 auto;
-    overflow: scroll;
-}
-
-
-.event-1{
-    background-color: #01669E;
-    .event-img{
-        background: url('../imgs/guggenheim.png') no-repeat;
-    }
-}
-
-.event-2{
-    background-color: #00B477;
-    .event-img{
-        background: url('../imgs/museum.png') no-repeat;
-    }
-}
-
-.event-3{
-    background-color: #D49538;
-    .event-img{
-        background: url('../imgs/van-gogh.png') no-repeat;
-    }
-}
-.event-4{
-    background-color: #00AF92;
-    .event-img{
-        background: url('../imgs/meeting.png') no-repeat;
-    }
+    overflow: hidden;
 }
 
 .event-item{
@@ -59,7 +31,9 @@
     width: 200px;
     height: 100%;
     float: left;
+    background-color: #fff;
     .event-img{
+        background-repeat: no-repeat;
         height: 65.79%;
         width: 100%;
         overflow: hidden;
