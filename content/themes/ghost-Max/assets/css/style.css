@@ -433,15 +433,17 @@ SCHOOL PAGE
 .gallery-item {
   position: relative;
   display: inline-block;
-  height: 226px;
-  width: 234px;
+  height: 250px;
+  width: 250px;
   overflow: hidden;
   background-color: #f1c40f;
   margin: 1.357% 21px; }
   .gallery-item img {
     position: absolute;
     left: 0;
-    top: 0; }
+    top: 0;
+    width: 101%;
+    height: 101%; }
 
 .gallery-title {
   background-color: #fff;

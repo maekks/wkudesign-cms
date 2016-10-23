@@ -1,6 +1,6 @@
-{{#get "posts" filter="tags:gallery" limit="7"}}
+{{#get "posts" filter="tags:gallery" limit="7" order="published_at asc"}}
 {{#foreach posts}}
-<a href="#">
+<a href="{{url}}">
     <div class="gallery-item">
         <img src="{{image}}" alt="Drawing Art Girl" />
         <h3>Willam Johns</h3>
