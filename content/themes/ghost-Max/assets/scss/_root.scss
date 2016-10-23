@@ -9,8 +9,13 @@ ROOT ELEMENTS RESET
     margin: 0;
 }
 
-html,body{
+html{
     height: 100%;
+    width: 100%;
+}
+
+body{
+    min-height: 100%;
     width: 100%;
 }
 
