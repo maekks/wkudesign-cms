@@ -1,7 +1,7 @@
 {{! This is the post loop - each post will be output using this markup }}
 {{#get "posts" filter="tags:event" limit="4"}}
 {{#foreach posts}}
-<a href="{{url}}">
+<a class={{post_class}} href="{{url}}">
     <div class="event-item"  data-imgurl="{{image}}">
         <div class="event-img" style="background-image: url({{image}})"></div>
         <div class="event-intro">

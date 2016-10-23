@@ -16,7 +16,7 @@ Menu.prototype._init = function() {
   this.body = document.body;
   this.wrapper = document.querySelector('.container');
   this.menu = document.querySelector('.menu');
-  this.mask = document.querySelector('.container');
+  this.mask = document.querySelector('.menu-mask');
   this.toggleBtn = document.querySelector('.hamburger-btn');
   this._initEvents();
 };
@@ -45,12 +45,14 @@ Menu.prototype.open = function() {
   this.body.classList.add('has-active-menu');
   this.wrapper.classList.add('has-push-top');
   this.menu.classList.add('is-active');
+  this.mask.classList.add('is-active');
 };
 
 Menu.prototype.close = function() {
   this.body.classList.remove('has-active-menu');
   this.wrapper.classList.remove('has-push-top');
   this.menu.classList.remove('is-active');
+  this.mask.classList.remove('is-active');
 }
 
 var Menu = new Menu();
