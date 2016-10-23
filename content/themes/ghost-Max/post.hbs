@@ -5,28 +5,28 @@
 
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
+<article class="{{post_class}}">
+    <header id="header" class="main-header post-head">
+        <h1>
+            <a href="{{@blog.url}}">{{@blog.title}}</a>
+        </h1>
+        {{navigation}}
+    </header>
 
-<header id="header" class="main-header post-head">
-    <h1>
-        <a href="{{@blog.url}}">{{@blog.title}}</a>
-    </h1>
-    {{navigation}}
-</header>
+    <section id="main" class="wrapper">
+        <div class="container {{post_class}}">
 
-<section id="main" class="wrapper">
-    <div class="container {{post_class}}">
+            <header class="major">
+                <h2>{{title}}</h2>
+                <p><time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}</p>
+            </header>
 
-        <header class="major">
-            <h2>{{title}}</h2>
-            <p><time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}</p>
-        </header>
+            {{#if image}}
+                <a href="#" class="image fit"><img src="{{image}}" alt="" /></a>
+            {{/if}}
 
-        {{#if image}}
-            <a href="#" class="image fit"><img src="{{image}}" alt="" /></a>
-        {{/if}}
-
-        {{content}}
-    </div>
-</section>
-
+            {{content}}
+        </div>
+    </section>
+</article>
 {{/post}}

@@ -490,9 +490,10 @@ SCHOOL PAGE
 .events-box {
   position: relative;
   height: 43.43%;
-  width: 56%;
+  width: 800px;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+  border-radius: 5px 5px 5px 5px; }
 
 .event-item {
   display: block;
