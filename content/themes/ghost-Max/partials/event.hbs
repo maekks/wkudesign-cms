@@ -1,0 +1,31 @@
+{{! This is the post loop - each post will be output using this markup }}
+{{#get "posts" filter="tags:event" limit="4"}}
+{{#foreach posts}}
+<a href="{{url}}">
+    <div class="event-item"  data-imgurl="{{image}}">
+        <div class="event-img" style="background-image: url({{image}})"></div>
+        <div class="event-intro">
+            <p>
+                {{title}}
+                <br>
+                {{excerpt characters="40"}}
+                <br>
+                <span class="event-date lightfont">{{date published_at format="MMMM DD, YYYY"}}</span>
+            </p>
+        </div>
+    </div>
+</a>
+{{/foreach}}
+{{/get}}
+<script type="text/javascript">
+        $('.event-item').backgroundBlur({
+            imageURL : '',
+            blurAmount : 20,
+            imageClass : 'bg-blur',
+            overlayClass : 'bg-blur-overlay',
+        });
+</script>
+
+
+<!-- {{! Previous/next page links - displayed on every page }}
+{{pagination}} -->

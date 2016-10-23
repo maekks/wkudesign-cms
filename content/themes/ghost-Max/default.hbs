@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{! Document Settings }}
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        {{! Page Meta }}
+        <title>{{meta_title}}</title>
+        <meta name="description" content="{{meta_description}}" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+        <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+
+        {{! Ghost outputs important style and meta data with this tag }}
+        {{ghost_head}}
+        <script src="{{asset "js/vendors/jquery-3.1.1.min.js"}}"></script>
+        <script src="{{asset "js/vendors/background-blur.min.js"}}"></script>
+    </head>
+
+    <body class="{{body_class}}">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="wrapper">
+
+            {{! Everything else gets inserted here }}
+            {{{body}}}
+
+        </div>
+
+        {{! Ghost outputs important scripts and data with this tag }}
+        {{ghost_foot}}
+        <script src="{{asset "js/vendors/pace.min.js"}}"></script>
+        <script src="{{asset "js/menu.js"}}"></script>
+        <script src="{{asset "js/vendors/smooth-scroll.min.js"}}"></script>
+        <script type="text/javascript">
+            function loadJScript() {
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "http://api.map.baidu.com/api?v=2.0&ak=yituFURUMCEEXD1NX3qjFW15om2AkS0W&callback=init";
+                document.body.appendChild(script);
+            }
+            function init() {
+                var map = new BMap.Map("allmap");
+                var point = new BMap.Point(120.657451,27.925595);
+                map.centerAndZoom(point,12);
+                var myIcon = new BMap.Icon("assets/imgs/wkulogo.jpg", new BMap.Size(30,30));
+                var marker2 = new BMap.Marker(point,{icon:myIcon});
+                map.addOverlay(marker2);
+            }
+            window.onload = loadJScript;
+        </script>
+    </body>
+</html>

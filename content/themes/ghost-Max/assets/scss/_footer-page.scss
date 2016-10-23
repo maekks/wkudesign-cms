@@ -1,0 +1,106 @@
+/*-----------------------------------------------------------------------------
+
+FOOTER PAGE
+
+-----------------------------------------------------------------------------*/
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: white;
+    text-align: center;
+}
+
+// .logo{
+//     position: absolute;
+//     top: 10px;
+//     left: 20px;
+//     height: 22px;
+//     width: 157px;
+//     overflow: hidden;
+// }
+
+.logo img{
+    transform: translate(0, -131px);
+}
+
+.contact{
+    display: inline-block;
+}
+
+.btn{
+    display: inline-block;
+    height: 20px;
+    width: 62px;
+    background: #E32429;
+    border-radius: 2px;
+    font-size: 10px;
+    color: #FFFFFF;
+    letter-spacing: 1.6px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    margin-top: 10px;
+    line-height: 0px;
+}
+
+.btn p{
+    text-align: right;
+    margin-right: 5px;
+    line-height: 20px;
+    margin-top: 0;
+
+}
+
+.btn .icon{
+    float: left;
+    height: 15.5px;
+    width: 19px;
+    margin-left: 5.3px;
+    margin-top: 1.5px;
+    overflow: hidden;
+}
+
+.weibo{
+    background-color: #E32429;
+}
+
+/*.weibo :hover{
+    background-color: #C11B20;
+}*/
+
+.weibo img{
+    transform: translate(0, -153px);
+}
+
+.instagram{
+    background-color: #2A5B83;
+}
+
+/*.instagram :hover{
+    background-color: #13456F;
+}*/
+
+.instagram img{
+    transform: translate(0, -169px);
+}
+
+.wechat{
+    background-color: #1ECE29;
+}
+
+/*.wechat :hover{
+    background-color: #13AC1D;
+}*/
+
+.wechat img{
+    transform: translate(0, -184px);
+}
+
+.copyright{
+    position: absolute;
+    right: 26px;
+    bottom: 13px;
+    font-size: 11px;
+    color: #808083;
+}
