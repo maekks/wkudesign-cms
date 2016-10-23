@@ -477,7 +477,8 @@ SCHOOL PAGE
   background-size: cover;
   background-position: center center;
   text-align: center;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: -5; }
   .events-page h1 {
     font-family: "myoswaldlight", -apple-system, mysanfranciscodisplayregular, "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, "Source Han Sans CN", "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
     font-size: 5.143rem;
@@ -498,14 +499,17 @@ SCHOOL PAGE
   width: 200px;
   height: 100%;
   float: left;
-  background-color: #fff; }
+  overflow: hidden;
+  position: relative;
+  opacity: 0.9; }
   .event-item .event-img {
     background-repeat: no-repeat;
     height: 65.79%;
     width: 100%;
     overflow: hidden;
     background-position: center center;
-    background-size: 101% 101%; }
+    background-size: 101% 101%;
+    z-index: 1; }
   .event-item .event-intro {
     display: block;
     width: 80%;
@@ -515,7 +519,28 @@ SCHOOL PAGE
     font-size: 0.857rem;
     line-height: 1rem;
     letter-spacing: 0;
-    text-align: left; }
+    text-align: left;
+    z-index: 1; }
+  .event-item .bg-blur {
+    z-index: -2;
+    position: absolute;
+    width: 150%;
+    min-height: 150%;
+    height: auto;
+    display: block;
+    top: 40%;
+    left: 0; }
+  .event-item .bg-blur-overlay {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    opacity: 0.7;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(46%, rgba(0, 0, 0, 0.08)), color-stop(59%, rgba(0, 0, 0, 0.08)), color-stop(100%, rgba(0, 0, 0, 0.9)));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.08) 46%, rgba(0, 0, 0, 0.08) 59%, rgba(0, 0, 0, 0.9) 100%);
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.08) 46%, rgba(0, 0, 0, 0.08) 59%, rgba(0, 0, 0, 0.9) 100%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 46%, rgba(0, 0, 0, 0.08) 59%, rgba(0, 0, 0, 0.9) 100%); }
 
 .event-date {
   font-weight: lighter; }

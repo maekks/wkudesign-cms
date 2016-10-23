@@ -55,6 +55,4 @@ Menu.prototype.close = function() {
 
 var Menu = new Menu();
 
-
-
 })(window)
